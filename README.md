@@ -4,6 +4,13 @@ Control presentations, media, browsers, and the mouse with webcam hand gestures.
 The app uses **MediaPipe Gesture Recognizer**, **OpenCV**, and **PyAutoGUI** to
 send normal key presses and mouse actions to the active application.
 
+## Try it (Windows)
+
+1. Install Python 3.12 from python.org (tick "Add python.exe to PATH")
+2. Click the green Code button → Download ZIP, and unzip it
+3. Double-click "Gesture Control.bat" (first run installs everything, ~3 min)
+4. Open PowerPoint and swipe your hand
+
 ## Features
 
 - Profiles for `slides`, `media`, `browse`, `youtube`, `meeting`, and `mouse`
