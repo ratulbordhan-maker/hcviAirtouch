@@ -1,0 +1,86 @@
+{
+  "camera_index": 0,
+  "frame_width": 640,
+  "frame_height": 480,
+
+  "cooldown_seconds": 0.7,
+  "lost_hand_frames": 5,
+  "sounds_enabled": true,
+
+  "mouse": {
+    "smoothing_min": 0.15,
+    "smoothing_max": 0.7,
+    "speed_for_max": 0.03,
+    "deadzone": 0.002,
+    "pinch_on": 0.35,
+    "pinch_off": 0.5,
+    "click_cooldown_seconds": 0.4,
+    "edge_margin": 0.2,
+    "pointer": "knuckle",
+    "rewind_seconds": 0.2
+  },
+
+  "swipe": {
+    "window_seconds": 0.4,
+    "min_distance": 0.25,
+    "max_vertical": 0.15
+  },
+
+  "static": {
+    "hold_frames": 8,
+    "min_score": 0.6,
+    "still_threshold": 0.06,
+    "repeat_interval": 0.4,
+    "grace_frames": 3
+  },
+
+  "toggle_gesture": "ILoveYou",
+  "profile_gesture": "Victory",
+
+  "active_profile": "slides",
+  "profiles": {
+    "slides": {
+      "target_window": "PowerPoint",
+      "swipe_left":  {"type": "key", "key": "right", "label": "Next slide"},
+      "swipe_right": {"type": "key", "key": "left",  "label": "Previous slide"},
+      "Thumb_Up":    {"type": "key", "key": "right", "label": "Next slide"},
+      "Thumb_Down":  {"type": "key", "key": "left",  "label": "Previous slide"},
+      "Closed_Fist": {"type": "key", "key": "b",     "label": "Black screen"}
+    },
+    "media": {
+      "target_window": "",
+      "Open_Palm":   {"type": "key", "key": "playpause",  "label": "Play / pause"},
+      "Thumb_Up":    {"type": "key", "key": "volumeup",   "label": "Volume up",   "repeat": true},
+      "Thumb_Down":  {"type": "key", "key": "volumedown", "label": "Volume down", "repeat": true},
+      "swipe_left":  {"type": "key", "key": "nexttrack",  "label": "Next track"},
+      "swipe_right": {"type": "key", "key": "prevtrack",  "label": "Previous track"}
+    },
+    "browse": {
+      "target_window": "Chrome",
+      "Thumb_Up":    {"type": "scroll", "amount": 300,  "label": "Scroll up",   "repeat": true},
+      "Thumb_Down":  {"type": "scroll", "amount": -300, "label": "Scroll down", "repeat": true},
+      "swipe_left":  {"type": "hotkey", "keys": ["alt", "right"], "label": "Forward"},
+      "swipe_right": {"type": "hotkey", "keys": ["alt", "left"],  "label": "Back"}
+    },
+    "youtube": {
+      "target_window": "YouTube",
+      "Open_Palm":   {"type": "key", "key": "k", "label": "Play / pause"},
+      "swipe_left":  {"type": "key", "key": "l", "label": "Forward 10 seconds"},
+      "swipe_right": {"type": "key", "key": "j", "label": "Back 10 seconds"},
+      "Thumb_Up":    {"type": "key", "key": "volumeup", "label": "Volume up", "repeat": true},
+      "Thumb_Down":  {"type": "key", "key": "volumedown", "label": "Volume down", "repeat": true},
+      "Closed_Fist": {"type": "key", "key": "f", "label": "Fullscreen"}
+    },
+    "meeting": {
+      "target_window": "Meet",
+      "Closed_Fist": {"type": "hotkey", "keys": ["ctrl", "d"], "label": "Toggle mute"},
+      "Open_Palm":   {"type": "hotkey", "keys": ["ctrl", "e"], "label": "Toggle camera"}
+    },
+    "mouse": {
+      "target_window": "",
+      "mode": "mouse",
+      "pinch_action": {"type": "mouse_click", "button": "left", "label": "Left click"},
+      "right_pinch_action": {"type": "mouse_click", "button": "right", "label": "Right click"}
+    }
+  }
+}
